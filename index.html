@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>drawing board</title>
+    <link rel="stylesheet" href="./src/style.css">
+
+</head>
+
+<body>
+    <h1>my drawing board</h1>
+    <div class="mention">
+        1.鼠标左键单击并拖动，绘制线条；<br>
+        2.空格键可清空画板；<br>
+        3.上下按键可调整画笔粗细<br>
+        4.按下s键可画正方形
+    </div>
+    <div id="tools">
+        <button id="decrease">-</button>
+        <span id="size">10</span>
+        <button id="increase">+</button>
+        <input type="color" id="color" value="black">
+        <button id="clear">清空</button>
+    </div>
+    <canvas id="canvas" width="1000" height="500"></canvas>
+
+    <script src="./src/drawing.js"></script>
+</body>
+
+</html>
